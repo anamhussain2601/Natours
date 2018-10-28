@@ -4,7 +4,7 @@ $color-primary-light:#7ed56f;
 $color-primary-dark:#28b485;
 
 $color-grey-dark:#777;
-
+$color-white:#fff;
 
 *,
 *::after,
@@ -59,7 +59,7 @@ body {
 }
 
 .heading-primary {
-  color: #ffffff;
+  color:$color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
@@ -135,7 +135,7 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .btn--white {
-  background-color: white;
+  background-color: $color-white;
   color:$color-grey-dark;
 }
 .btn::after {
@@ -149,9 +149,10 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.4s;
+  
 }
 .btn--white::after {
-  background-color: white;
+  background-color:$color-white;
 }
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
@@ -159,4 +160,7 @@ body {
 }
 
 .btn--animated{
-  animation: moveInBottom .5s ease-out .
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards;
+}  
+
