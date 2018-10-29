@@ -1,6 +1,5 @@
 .row {
   max-width: $grid-width; //fill 114 rem else will occupy 1005 of the window
-  background-color: #eee;
   margin: 0 auto; //centers the block elemnet inside of another block element
 
   &:not(:last-child) {
@@ -13,7 +12,6 @@
 
   [class^="col-"] {
     //^ means all the class attribute that start with "col"
-    background-color: red;
     float: left; //float these columns to the left side
 
     &:not(:last-child) {
